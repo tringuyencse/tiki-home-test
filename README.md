@@ -69,7 +69,7 @@ described above, and write the output as another CSV file with following format:
 ###### How to run
 ```
 
-    git clone https://github.com/tringuyencse/
+    git clone https://github.com/tringuyencse/tiki-home-test
     
     cd tiki-home-test
 
