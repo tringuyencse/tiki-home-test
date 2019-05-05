@@ -28,16 +28,18 @@ the same number don't need to be consecutive .
 This is an example of the list, given as a CSV file:
 
 ```csv
-PHONE_NUMBER,ACTIVATION_DATE,DEACTIVATION_DATE 
-0987000001,2016-03-01,2016-05-01 
-0987000002,2016-02-01,2016-03-01 
-0987000001,2016-01-01,2016-03-01 
-0987000001,2016-12-01, 
-0987000002,2016-03-01,2016-05-01 
-0987000003,2016-01-01,2016-01-10 
-0987000001,2016-09-01,2016-12-01 
-0987000002,2016-05-01, 
-0987000001,2016-06-01,2016-09-01
+
+PHONE_NUMBER,        ACTIVATION_DATE,       DEACTIVATION_DATE 
+ 0987000001,           2016-03-01,            2016-05-01 
+ 0987000002,           2016-02-01,            2016-03-01 
+ 0987000001,           2016-01-01,            2016-03-01 
+ 0987000001,           2016-12-01, 
+ 0987000002,           2016-03-01,            2016-05-01 
+ 0987000003,           2016-01-01,            2016-01-10 
+ 0987000001,           2016-09-01,            2016-12-01 
+ 0987000002,           2016-05-01, 
+ 0987000001,           2016-06-01,            2016-09-01
+
 ```
 
 In this list, ACTIVATION_DATE and DEACTIVATION_DATE are represented with YYYY-
@@ -56,18 +58,40 @@ described above, and write the output as another CSV file with following format:
 
 ###### Requirement
 ```
-    Python 2.7.12
+
+    Ubuntu (I don't how with another OS)
+    
+    Python 3.6
+    
     Please copy your csv file to this project's root folder and rename to "test.csv"!
+    
 ```
 ###### How to run
 ```
-    git clone https://github.com/tringuyencse/tiki-home-test
+
+    git clone https://github.com/tringuyencse/
+    
     cd tiki-home-test
+
+    sudo apt-get update
+    
+    sudo apt-get install python3.6
+    
+    sudo apt install python-pip
+    
+    pip install pandas
+    
     python main.py
+    
+    cat finished.csv
+    
 ```
 
 #### Solution
 ```
+
     First, I sort (DESC) for csv file by phone and then by activation date 
+    
     Then, read row by row to check data and save to finish.csv file 
+    
 ```
