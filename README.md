@@ -59,7 +59,7 @@ described above, and write the output as another CSV file with following format:
 ###### Requirement
 ```
 
-    Ubuntu (I don't how with another OS)
+    Ubuntu (I don't know how with another OS)
     
     Python 3.6
     
